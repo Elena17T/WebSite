@@ -122,14 +122,18 @@ header .headerBlock ul li:hover{
     background:#03272d;
     display:flex;
     justify-content: center;
-    padding-left:90px;
+    
     height:100vh;
   }
 
     .sectionOne{
     display:flex;
     justify-content: space-around;
+    background-image: url(./image/section-one/marvin-jockisch-dMfgH_Ltc_Y-unsplash.jpg);
+    background-color: black;
+    background-size: 100%;
     width:100%;
+    background-size: contain;
     
   }
   
@@ -138,6 +142,7 @@ header .headerBlock ul li:hover{
     margin-top: 140px;
     margin-right: 40px;
     top:200px;
+    padding-left:90px;
     
   }
 
