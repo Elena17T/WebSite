@@ -5,7 +5,7 @@
     --font-color: white;
     --font-color-second:hsl(240, 40%, 90%);
     --font-hover-color: rgba(167, 199, 215, 0.957);
-    --background-color-hover: rgb(50, 102, 214);
+    --background-color-hover: #12677e;
     --filter-shadow: rgb(105, 105, 168);
     --scroll-gradient-first:#00c6fb;
     --scroll-gradient-second:#005bea;
@@ -75,6 +75,7 @@ header .headerBlock ul{
   display: flex;
   gap:30px;
   padding-right: 50px;
+  padding-left: 470px;
 }
 
 header .headerBlock ul li{
