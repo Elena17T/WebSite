@@ -36,7 +36,7 @@ header{
    
 }
 
-.logo{
+/* .logo{
     padding-top: 10px;
     width: 30px;
     height: 25px;
@@ -45,9 +45,9 @@ header{
     color: var(--font-hover-color);
     background: var(--background-color-hover);
     border-radius: 2px; 
-}
+} */
 
-.material-symbols-outlined {
+/* .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
@@ -70,7 +70,7 @@ header{
   color: var(--font-hover-color);
   background: var(--background-color-hover);
   border-radius: 2px; 
-}
+} */
 header .headerBlock ul{
   display: flex;
   gap:30px;
