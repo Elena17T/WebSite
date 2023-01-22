@@ -21,16 +21,76 @@
     text-transform: uppercase;
     margin-bottom: 0px;
     color: white;
-    width: 900px;
+    width: 1150px;
+    height: 70px;
     text-align: center;
+    border:4px solid white;
+    border-radius: 10px;
  }
 
  .first-part .serviceOne, .serviceTwo, .serviceThree, .serviceFour, .serviceFive, .serviceSix{
     /* height: 500px; */
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     /* max-width: 400px; */
     border:4px solid white;
+    border-radius: 10px;
     justify-content: space-between;
     margin: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
  }
+ .head{
+   height:150px;
+ }
+  .head a{
+    color:white;
+    text-decoration: none;
+    font-size:20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: o;
+    cursor: pointer;
+    
+    
+ }
+ .agri{
+   max-height: 150px;
+   box-sizing: border-box;
+   
+   display: block;
+   
+ }
+  .agri img {
+    box-sizing: border-box;
+    object-fit: contain;
+    width:250px;
+    cursor: pointer;
+  
+    max-height: 150px;
+    height: 140px;
+ }
+
+ /* img{
+   width:250px;
+   height: 140px;
+   border-radius: 10px;
+ } */
+
+ /* .serviceTwo .head{
+   color:white;
+   font-size:20px;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding: o;
+   
+}
+.serviceTwo .agri img{
+   box-sizing: border-box;
+   object-fit: contain;
+   width:250px;
+} */
