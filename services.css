@@ -1,14 +1,36 @@
 @import url('index.css');
- header a{
+
+header .head{
+    /* border: 4px solid white; */
+    color: white;
+    /* width: 270px; */
+    height: 40px;
+    text-align: center;
+    margin-left: 45px;
+    
+    
+}
+ header .head a{
     text-decoration: none;
     font-size: 20px;
     color:white;
-    padding-left: 100px;
-    /* border: 4px solid white; */
+    /* padding-left: 100px; */
+    border: 4px solid white;
+    border-radius: 10px;
     text-align: center;
-    
+    /* width: 300px; */
+    height: 30px;
+    padding: 2px 5px;
  }
 
+ header .head a:hover{
+   border: 4px solid #12677e;
+   color: #12677e;
+ }
+ header .head:hover{
+   transform:translateY(-2px);
+   transition: 0.5s;
+ }
  .first-part{
     display: flex;
     width: 100%;
@@ -27,6 +49,9 @@
     border:4px solid white;
     border-radius: 10px;
  }
+ .first-part .name:hover{
+   border: 4px solid #12677e;
+ }
 
  .first-part .serviceOne, .serviceTwo, .serviceThree, .serviceFour, .serviceFive, .serviceSix{
     /* height: 500px; */
@@ -42,6 +67,10 @@
     justify-content: center;
     align-items: center;
  }
+ .first-part .serviceOne:hover, .serviceTwo:hover, .serviceThree:hover, .serviceFour:hover, .serviceFive:hover, .serviceSix:hover{
+   border: 4px solid #12677e;
+ }
+
  .head{
    height:150px;
  }
