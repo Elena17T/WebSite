@@ -39,7 +39,7 @@ header .head{
     flex-wrap: wrap;
     justify-content: space-around;
  }
- .first-part .name{
+ .name{
     text-transform: uppercase;
     margin-bottom: 0px;
     color: white;
@@ -49,11 +49,11 @@ header .head{
     border:4px solid white;
     border-radius: 10px;
  }
- .first-part .name:hover{
+ .name:hover{
    border: 4px solid #12677e;
  }
 
- .first-part .serviceOne, .serviceTwo, .serviceThree, .serviceFour, .serviceFive, .serviceSix{
+  .serviceOne, .serviceTwo, .serviceThree, .serviceFour, .serviceFive, .serviceSix{
     /* height: 500px; */
     width: 300px;
     height: 300px;
@@ -67,7 +67,7 @@ header .head{
     justify-content: center;
     align-items: center;
  }
- .first-part .serviceOne:hover, .serviceTwo:hover, .serviceThree:hover, .serviceFour:hover, .serviceFive:hover, .serviceSix:hover{
+  .serviceOne:hover, .serviceTwo:hover, .serviceThree:hover, .serviceFour:hover, .serviceFive:hover, .serviceSix:hover{
    border: 4px solid #12677e;
  }
 
@@ -89,7 +89,6 @@ header .head{
  .agri{
    max-height: 150px;
    box-sizing: border-box;
-   
    display: block;
    
  }
@@ -98,28 +97,58 @@ header .head{
     object-fit: contain;
     width:250px;
     cursor: pointer;
-  
     max-height: 150px;
     height: 140px;
  }
 
- /* img{
-   width:250px;
-   height: 140px;
-   border-radius: 10px;
- } */
+ .servicesFirst, .servicesThird, .servicesFifth{
+   height:100vh;
+   background: #061732;
+ }
 
- /* .serviceTwo .head{
-   color:white;
-   font-size:20px;
-   align-items: center;
-   justify-content: center;
+ .servicesSecond, .servicesFourth, .servicesSixth{
+   height:100vh;
+   background: black;
+ }
+  .title{
+   padding-top: 40px;
+ }
+  .title h3{
+   margin-top: 0;
    text-align: center;
-   padding: o;
-   
-}
-.serviceTwo .agri img{
-   box-sizing: border-box;
+   font-size: 35px;
+   color: white;
+ }
+ .title h3:hover{
+   color:#12677e;
+ }
+  .wrap{
+   display:flex;
+ }
+ .wrap .imageBlock{
+   /* border:1px solid red; */
+   width:20%;
+   height:400px;
+   margin-left: 65px;
+   margin-right: 20px;
+ }
+ .wrap .textBlock{
+   /* border:1px solid red; */
+   width:68%;
+   height:400px;
+ }
+ .wrap .imageBlock img{
    object-fit: contain;
-   width:250px;
-} */
+   box-sizing: border-box;
+   width:100%;
+   height:400px;
+   background-size: 100%;
+ }
+ .wrap .textBlock p{
+   padding-left: 15px;
+   width: 90%;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: white;
+ }
