@@ -34,7 +34,8 @@ header .head{
  .first-part{
     display: flex;
     width: 100%;
-    height:auto;
+    height: 100vh;
+    /* height:auto; */
     background-color: black;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -56,7 +57,7 @@ header .head{
   .serviceOne, .serviceTwo, .serviceThree, .serviceFour, .serviceFive, .serviceSix{
     /* height: 500px; */
     width: 300px;
-    height: 300px;
+    height: 200px;
     /* max-width: 400px; */
     border:4px solid white;
     border-radius: 10px;
@@ -84,71 +85,64 @@ header .head{
     padding: o;
     cursor: pointer;
     
-    
+ }
+ .head a h3{
+  font-size: 18px;
  }
  .agri{
    max-height: 150px;
    box-sizing: border-box;
-   display: block;
+   padding-bottom: 20px;
+   /* display: block; */
    
  }
-  .agri img {
+  .image{
     box-sizing: border-box;
-    object-fit: contain;
-    width:250px;
+   
+    /* width:min-content;
+    height: auto; */
     cursor: pointer;
     max-height: 150px;
-    height: 140px;
+    height: 80px;
+    width: 150px;
+    object-fit: contain;
  }
 
  .servicesFirst, .servicesThird, .servicesFifth{
-   height:100vh;
-   background: #061732;
+  background: #061232;
  }
-
  .servicesSecond, .servicesFourth, .servicesSixth{
-   height:100vh;
-   background: black;
+  background: #0C1425;
  }
-  .title{
-   padding-top: 40px;
+ .title{
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
  }
-  .title h3{
-   margin-top: 0;
-   text-align: center;
-   font-size: 35px;
-   color: white;
+ .title h3{
+  margin: 0px;
+  color: white;
  }
- .title h3:hover{
-   color:#12677e;
+ .wrap{
+  display: flex;
+  height: 86vh;
  }
-  .wrap{
-   display:flex;
+ .imageBlock{
+  display: flex;
+  margin-left: 60px;
+  border-radius: 4px;
+  justify-content: center;
+ 
  }
- .wrap .imageBlock{
-   /* border:1px solid red; */
-   width:20%;
-   height:400px;
-   margin-left: 65px;
-   margin-right: 20px;
+ .imageBlock img{
+  width:250px;
+  border-radius: 4px;
+  object-fit: contain;
+  
  }
- .wrap .textBlock{
-   /* border:1px solid red; */
-   width:68%;
-   height:400px;
+ .textBlock{
+  margin-left: 20px;
  }
- .wrap .imageBlock img{
-   object-fit: contain;
-   box-sizing: border-box;
-   width:100%;
-   height:400px;
-   background-size: 100%;
- }
- .wrap .textBlock p{
-   padding-left: 15px;
-   width: 90%;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   color: white;
+ .textBlock p{
+  color: white;
  }
