@@ -54,6 +54,29 @@ header .head{
    border: 4px solid #12677e;
  }
 
+ .scrollBtn{
+  position: fixed;
+  bottom: 700px;
+  right: 40px;
+  width:70px;
+  height: 70px;
+  background: url(./image/home-3.png);
+  background-size: cover;
+  cursor: pointer;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  color: white;
+ }
+
+ .scrollBtn.active{
+  visibility: visible;
+  bottom: 40px;
+  opacity: 1;
+  color: white;
+ }
+
   .serviceOne, .serviceTwo, .serviceThree, .serviceFour, .serviceFive, .serviceSix{
     /* height: 500px; */
     width: 300px;
@@ -142,6 +165,7 @@ header .head{
  }
  .textBlock{
   margin-left: 20px;
+  margin-right: 60px;
  }
  .textBlock p{
   color: white;
