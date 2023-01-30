@@ -52,6 +52,9 @@ header .head{
  }
  .name:hover{
    border: 4px solid #12677e;
+   -webkit-box-shadow: 19px -22px 50px -14px rgba(233, 242, 240, 0.57);
+   -moz-box-shadow: 19px -22px 50px -14px rgba(226, 239, 236, 0.57);
+    box-shadow: 19px -22px 50px -14px rgba(216, 228, 226, 0.57);
  }
 
  .scrollBtn{
@@ -93,6 +96,9 @@ header .head{
  }
   .serviceOne:hover, .serviceTwo:hover, .serviceThree:hover, .serviceFour:hover, .serviceFive:hover, .serviceSix:hover{
    border: 4px solid #12677e;
+   -webkit-box-shadow: 19px -22px 50px -14px rgba(233, 242, 240, 0.57);
+   -moz-box-shadow: 19px -22px 50px -14px rgba(226, 239, 236, 0.57);
+    box-shadow: 19px -22px 50px -14px rgba(216, 228, 226, 0.57);
  }
 
  .head{
@@ -161,7 +167,12 @@ header .head{
   width:250px;
   border-radius: 4px;
   object-fit: contain;
-  
+ 
+ }
+ img:hover{
+  -webkit-box-shadow: 19px -22px 50px -14px rgba(233, 242, 240, 0.57);
+  -moz-box-shadow: 19px -22px 50px -14px rgba(226, 239, 236, 0.57);
+   box-shadow: 19px -22px 50px -14px rgba(216, 228, 226, 0.57);
  }
  .textBlock{
   margin-left: 20px;
