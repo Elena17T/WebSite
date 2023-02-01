@@ -1,9 +1,106 @@
 @import url('index.css');
+header a{
+  margin-top:-20px;
+  margin-left: 32px;
+  text-decoration:none;
+  color:yellowgreen;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  position:absolute;
+  overflow:hidden;
+  border-radius: 8px;
+}
 
-header .head{
-    /* border: 4px solid white; */
+header a:before{
+  content:"";
+  position:absolute;
+  top:2px;
+  left:2px;
+  bottom:2px;
+  width:50%;
+  background: rgba(255, 255, 255, 0.05);
+}
+header a span:nth-child(1){
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:2px;
+  background: linear-gradient(to right, #0c002b, greenyellow);
+  animation: animateTop 2s linear infinite;
+}
+
+header a span:nth-child(2){
+   position:absolute;
+  top:0px;
+  right:0px;
+  width:2px;
+  height:100%;
+  background: linear-gradient(to bottom, #0c002b, greenyellow);
+  animation: animateRight 2s linear infinite;
+  animation-delay: 1s;
+}
+
+header a span:nth-child(3){
+  position:absolute;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  height:2px;
+  background: linear-gradient(to left, #0c002b, #12677e);
+  animation: animateBottom 2s linear infinite;
+}
+
+header a span:nth-child(4){
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:2px;
+  height:100%;
+  background: linear-gradient(to top, #0c002b, #12677e);
+  animation: animateLeft 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animateTop{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+     transform: translateX(100%);
+  }
+}
+
+@keyframes animateRight{
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+     transform: translateY(100%);
+  }
+}
+
+@keyframes animateBottom{
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+     transform: translateX(-100%);
+  }
+}
+
+@keyframes animateLeft{
+  0%{
+    transform: translateY(100%);
+  }
+  100%{
+     transform: translateY(-100%);
+  }
+}
+
+/* header .head{
     color: white;
-    /* width: 270px; */
     height: 40px;
     text-align: center;
     margin-left: 45px;
@@ -14,11 +111,9 @@ header .head{
     text-decoration: none;
     font-size: 20px;
     color:white;
-    /* padding-left: 100px; */
     border: 4px solid white;
     border-radius: 10px;
     text-align: center;
-    /* width: 300px; */
     height: 30px;
     padding: 2px 5px;
  }
@@ -30,7 +125,9 @@ header .head{
  header .head:hover{
    transform:translateY(-2px);
    transition: 0.5s;
- }
+ } */
+
+
  .first-part{
     display: flex;
     width: 100%;
@@ -41,20 +138,30 @@ header .head{
     justify-content: space-around;
  }
  .name{
+    display: flex;
     text-transform: uppercase;
     margin-bottom: 0px;
     color: white;
     width: 1150px;
-    height: 70px;
+    height: 30px;
     text-align: center;
-    border:4px solid white;
+    border:2px solid white;
     border-radius: 10px;
+    justify-content: center;
+    padding-bottom: 15px;
  }
  .name:hover{
-   border: 4px solid #12677e;
+   border: 2px solid #12677e;
    -webkit-box-shadow: 19px -22px 50px -14px rgba(233, 242, 240, 0.57);
    -moz-box-shadow: 19px -22px 50px -14px rgba(226, 239, 236, 0.57);
     box-shadow: 19px -22px 50px -14px rgba(216, 228, 226, 0.57);
+ }
+
+ .name h2{
+  font-size: 20px;
+  /* text-align: center;
+  align-items: center;
+  justify-content: center; */
  }
 
  .scrollBtn{
@@ -85,7 +192,7 @@ header .head{
     width: 300px;
     height: 200px;
     /* max-width: 400px; */
-    border:4px solid white;
+    border:2px solid white;
     border-radius: 10px;
     justify-content: space-between;
     margin: 20px 20px 20px 20px;
@@ -95,7 +202,7 @@ header .head{
     align-items: center;
  }
   .serviceOne:hover, .serviceTwo:hover, .serviceThree:hover, .serviceFour:hover, .serviceFive:hover, .serviceSix:hover{
-   border: 4px solid #12677e;
+   border: 2px solid #12677e;
    -webkit-box-shadow: 19px -22px 50px -14px rgba(233, 242, 240, 0.57);
    -moz-box-shadow: 19px -22px 50px -14px rgba(226, 239, 236, 0.57);
     box-shadow: 19px -22px 50px -14px rgba(216, 228, 226, 0.57);
